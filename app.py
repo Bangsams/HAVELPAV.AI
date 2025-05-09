@@ -5,7 +5,7 @@ import time
 import base64
 import re
 
-from config import api_key  # Hapus jika tidak digunakan lagi
+ # Hapus jika tidak digunakan lagi
 
 # Konfigurasi halaman
 st.set_page_config(page_title="HAVELPAV - CS Lingkungan", page_icon="🌱", layout="wide")
@@ -24,9 +24,10 @@ st.markdown(
         color: black;
     }
 
-    /* Header sidebar */
-    .st-emotion-cache-1avcm0n {  
-        color: #1e5631;  /* Warna hijau tua untuk judul sidebar */
+    /* Header sidebar - misalnya untuk tulisan "havelpav cs" */
+    .st-emotion-cache-1avcm0n {
+        color: black !important;  /* Warna hitam */
+        font-weight: bold !important;  /* Tebal */
     }
 
     /* Chat bubble user */
@@ -34,6 +35,7 @@ st.markdown(
         background-color: #e0f7da;
         border-radius: 10px;
         padding: 8px;
+        color: black;
     }
 
     /* Chat bubble AI */
@@ -41,6 +43,7 @@ st.markdown(
         background-color: #f1f8e9;
         border-radius: 10px;
         padding: 8px;
+        color: black;
     }
 
     /* Scroll bar sidebar yang halus */
